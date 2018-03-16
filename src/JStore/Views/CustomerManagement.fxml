@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="677.0" prefWidth="980.0" style="-fx-background-color: E1E9F1;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JStore.Controllers.CustomerManagement">
+   <children>
+      <VBox layoutX="69.0" layoutY="80.0" prefHeight="296.0" prefWidth="842.0" spacing="10.0" style="-fx-background-color: 6D769E;">
+         <children>
+            <Label>
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableViewCustomer" onMouseClicked="#userClickedOnTableCustomer" prefHeight="211.0" prefWidth="802.0">
+              <columns>
+                  <TableColumn fx:id="ColcustomerID" prefWidth="75.0" text="Customer ID" />
+                  <TableColumn fx:id="ColcustomerFirstName" prefWidth="75.0" text="First name" />
+                  <TableColumn fx:id="ColcustomerLastname" prefWidth="95.20002746582031" text="Last name" />
+                  <TableColumn fx:id="ColcustomerUserName" prefWidth="77.5999755859375" text="username" />
+                  <TableColumn fx:id="ColcustomerPassword" prefWidth="89.60003662109375" text="Password" />
+                  <TableColumn fx:id="ColcustomerPhone" prefWidth="97.5999755859375" text="Phone" />
+                  <TableColumn fx:id="ColcustomerEmail" prefWidth="106.4000244140625" text="Eamil" />
+                  <TableColumn fx:id="ColcustomerAddress" prefWidth="106.4000244140625" text="Address" />
+                  <TableColumn fx:id="ColcustomerBirthday" prefWidth="106.4000244140625" text="JoinDate" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="347.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="IDField" prefHeight="26.0" prefWidth="69.0" promptText="ID" />
+                  <TextField fx:id="FnameField" prefHeight="26.0" prefWidth="74.0" promptText="First name" />
+                  <TextField fx:id="LnameField" prefHeight="26.0" prefWidth="76.0" promptText="Last name" />
+                  <TextField fx:id="usernamField" prefHeight="26.0" prefWidth="71.0" promptText="username" />
+                  <TextField fx:id="passwordField" prefHeight="26.0" prefWidth="77.0" promptText="Password" />
+                  <TextField fx:id="phoneField" prefHeight="26.0" prefWidth="94.0" promptText="phone" />
+                  <TextField fx:id="emailField" prefHeight="26.0" prefWidth="102.0" promptText="Email" />
+                  <TextField fx:id="AddressField" prefHeight="26.0" prefWidth="102.0" promptText="Address" />
+                  <JFXDatePicker fx:id="birthdayField" defaultColor="#d50035" prefHeight="28.0" prefWidth="117.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="219.0" layoutY="376.0" prefHeight="42.0" prefWidth="542.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="AddCustomerbuttom" onAction="#AddCustomer" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #A94748;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="DeleteCustomerButtom" onAction="#DeleteCustomer" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #565353;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ViewCustomerButtom" onAction="#ViewCustomer" prefHeight="42.0" prefWidth="118.0" style="-fx-background-color: #B3659D;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="UpdateCustomerButtom" onAction="#UpdateCustomer" prefHeight="0.0" prefWidth="130.0" style="-fx-background-color: #B0A24C;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton layoutX="406.0" layoutY="489.0" onAction="#SearcButtomCustomer" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #6D769E;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="589.0" onAction="#backbuttomCustomerManage" prefHeight="6.0" prefWidth="66.0" style="-fx-background-color: #766376;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="SearchField" layoutX="339.0" layoutY="450.0" prefHeight="26.0" prefWidth="288.0" promptText="Search here" />
+      <Text fill="#d50035" layoutX="245.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Sore Customer Management">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="40.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="866.0" layoutY="589.0" onAction="#LogOutCustomerMan" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #367572;" text="Logout " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

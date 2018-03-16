@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="761.0" scaleShape="false" style="-fx-background-color: #CBDAE2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JStore.Controllers.ADashboard">
+   <children>
+      <JFXButton layoutX="57.0" layoutY="155.0" onAction="#ManageOrder" prefHeight="118.0" prefWidth="210.0" style="-fx-background-color: #A94748;" text="Manage Orders" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="275.0" layoutY="368.0" onAction="#ManageCustomer" prefHeight="118.0" prefWidth="210.0" style="-fx-background-color: #6D769E;" text="Manage Customers" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="465.0" layoutY="155.0" onAction="#ManageProduct" prefHeight="118.0" prefWidth="210.0" style="-fx-background-color: #565353;" text="Manage Products" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="519.0" onAction="#BackButtom" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #766376;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#544c4c" layoutX="182.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard" underline="true">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="54.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="648.0" layoutY="518.0" onAction="#LogOutADashB" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #367572;" text="Logout " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

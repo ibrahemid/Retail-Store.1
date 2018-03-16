@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="917.0" style="-fx-background-color: E1E9F1;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JStore.Controllers.ProductManagement">
+   <children>
+      <VBox layoutX="69.0" layoutY="80.0" prefHeight="308.0" prefWidth="752.0" spacing="10.0" style="-fx-background-color: 6D769E;">
+         <children>
+            <Label>
+               <font> 
+                  <Font name="Fira Sans Condensed SemiBold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableViewProduct" onMouseClicked="#userClickedOnTable" prefHeight="211.0" prefWidth="814.0">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="82.39998626708984" text="Product ID" />
+                  <TableColumn fx:id="nameColumn" prefWidth="115.20001220703125" text="Product name" />
+                  <TableColumn fx:id="descColumn" minWidth="0.0" prefWidth="157.60003662109375" text="Product description" />
+                  <TableColumn fx:id="rateColumn" prefWidth="110.39999389648438" text="Product rate" />
+                  <TableColumn fx:id="priceColumn" prefWidth="124.79998779296875" text="Product Price" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="132.0" text="Product quantity" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="347.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="ProductIDField" prefHeight="26.0" prefWidth="69.0" promptText="Product ID" />
+                  <TextField fx:id="ProductNameField" prefHeight="26.0" prefWidth="119.0" promptText="Product name" />
+                  <TextField fx:id="ProdutDescField" prefHeight="26.0" prefWidth="146.0" promptText="Product description" />
+                  <TextField fx:id="ProductRateField" prefHeight="26.0" prefWidth="97.0" promptText="Product rate" />
+                  <TextField fx:id="ProductPriceField" prefHeight="26.0" prefWidth="112.0" promptText="Product price" />
+                  <TextField fx:id="ProductQuantityField" prefHeight="26.0" prefWidth="112.0" promptText="Product quantity" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="174.0" layoutY="388.0" prefHeight="42.0" prefWidth="542.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="AddProductbuttom" onAction="#AddProduct" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #A94748;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="DeleteProductButtom" onAction="#DeleteProduct" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #565353;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ViewProductButtom" onAction="#ViewProduct" prefHeight="42.0" prefWidth="118.0" style="-fx-background-color: #B3659D;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="UpdateProductButtom" onAction="#UpdateProduct" prefHeight="0.0" prefWidth="130.0" style="-fx-background-color: #B0A24C;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Fira Sans Condensed SemiBold" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton layoutX="367.0" layoutY="488.0" onAction="#SearcButtomProduct" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #6D769E;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="21.0" layoutY="559.0" onAction="#backbuttomProductManage" prefHeight="6.0" prefWidth="66.0" style="-fx-background-color: #766376;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="19.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="searchField" layoutX="301.0" layoutY="443.0" prefHeight="26.0" prefWidth="288.0" promptText="Search here" />
+      <Text fill="#d50035" layoutX="210.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J-Store Product Management">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="39.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="813.0" layoutY="577.0" onAction="#LogOutProductMan" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #367572;" text="Logout " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Fira Sans Condensed SemiBold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="730.0" scaleShape="false" style="-fx-background-color: #CBDAE2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JStore.Controllers.Other.SearchCustomer">
+   <children>
+      <JFXButton layoutX="296.0" layoutY="182.0" onAction="#SearchButtom" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #6D769E;" text="Search " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="459.0" onAction="#backbuttomSearchCustomer" prefHeight="6.0" prefWidth="66.0" style="-fx-background-color: #766376;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="208.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Customer" underline="true">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtSearchText" layoutX="215.0" layoutY="138.0" prefHeight="26.0" prefWidth="286.0" promptText="                                  Customer ID" />
+      <TableView fx:id="tableView" layoutX="42.0" layoutY="266.0" prefHeight="80.0" prefWidth="634.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="92.00006103515625" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="86.40000915527344" text="Last Name" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="109.60003662109375" text="Birthday" />
+            <TableColumn prefWidth="115.20001220703125" text="Email" />
+            <TableColumn prefWidth="151.20001220703125" text="Address" />
+         </columns>
+      </TableView>
+      <JFXTextArea fx:id="txtAreaSearchCustomer" layoutX="93.0" layoutY="335.0" prefHeight="61.0" prefWidth="539.0" />
+   </children>
+</AnchorPane>
