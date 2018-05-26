@@ -207,28 +207,3 @@ public class ProductManagement extends Application implements ControlledScreen {
     }
 }
 
-
-
-//                  notUsed
-//    String ProductNameField1=ProductNameField.getText();
-////    String ProdutDescField1=ProdutDescField.getText();
-////    String ProductPriceField1=ProductPriceField.getText();
-////    String ProductQuantityField1=ProductQuantityField.getText();
-////    String ProductRateField1=ProductRateField.getText();
-////    String ProductIDField1=ProductIDField.getText();
-
-
-//        ///notUsed
-//        Product NewProduct = new Product(ProductIDField.getText()
-//                ,ProductNameField.getText(),
-//                ProdutDescField.getText(),
-//                ProductRateField.getText(),
-//                ProductPriceField.getText(),
-//                ProductQuantityField.getText()
-//        );
-//      String ProductNameField1=ProductNameField.getText();
-////    String ProdutDescField1=ProdutDescField.getText();
-////    String ProductPriceField1=ProductPriceField.getText();
-////    String ProductQuantityField1=ProductQuantityField.getText();
-////    String ProductRateField1=ProductRateField.getText();
-////    String ProductIDField1=ProductIDField.getText();

@@ -17,6 +17,7 @@ import JStore.Models.Customer;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -38,18 +39,9 @@ public class Main extends Application {
         mainContainer.loadScreen(ProductManagement.name,ProductManagement.file);
         mainContainer.loadScreen(OrderManagement.name,OrderManagement.file);
 
-//        mainContainer.loadScreen(ManageProduct.name,ManageProduct.file);
-//        mainContainer.loadScreen(ManageCustomer.name,ManageCustomer.file);
-//        mainContainer.loadScreen(SearchCustomer.name,SearchCustomer.file);
-//        mainContainer.loadScreen(ManageOrder.name,ManageOrder.file);
-//        mainContainer.loadScreen(AddProduct.name,AddProduct.file);
-//        mainContainer.loadScreen(AddCustomer.name,AddCustomer.file);
-
         /// Set the main page
         mainContainer.setScreen(Login.name);
-// mainContainer.setScreen(ProductManagement.name);
-//        mainContainer.setScreen(CustomerManagement.name);
-
+        primaryStage.getIcons().add(new Image("JStore/drawable/icon.png"));
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
         Scene scene = new Scene(root);

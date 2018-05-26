@@ -88,12 +88,7 @@ public class Product implements Serializable {
 
 //Start
     public static ArrayList<Product> readProducts() {
-        /*
-         *
-         *   1.Check if file exists else create
-         *   2.Read file into array ArrayList
-         *   3.return it
-         * */
+
         File file = new File("products.txt");
         try {
             file.createNewFile(); //will atomically checks the existence of the file else will create one
@@ -123,14 +118,7 @@ public class Product implements Serializable {
     }
 
     public static void writeProducts(ArrayList<Product> Products){
-        /*
-         *
-         *   1.Loop through each Object inside users
-         *   2.writeObject
-         *
-         *
-         *
-         * */
+
         try {
 
             // create a new file with an ObjectOutputStream
@@ -154,18 +142,7 @@ public class Product implements Serializable {
     }
 
     public static ArrayList<Product> searchProducts(String keyword) {
-        /*
-         *
-         *   1.Check if file exists else create
-         *   2.Read file into array ArrayList
-         *   3. Create temp array and call results
-         *   4. loop through the array you read from the file
-         *   5. apply the condition of contain or equal to the corresponding object
-         *   6. if  found something add to the results array
-         *   7. finally return results
-         *
-         *
-         * */
+
 
         File file = new File("products.txt");
         try {
@@ -233,33 +210,5 @@ public class Product implements Serializable {
             return 1000;
         }
     }
-
-//    @Override
-//    public String toString() {
-//        return ProductName;
-//    }
-
-
-    /*
-    *
-      *
-      * List<Product> ProductList = new ArrayList<Product>();
-            Product p1= new Product(15,"Iphone8","last Model ",7.5f,900.f,20);
-            Product p2= new Product(15,"Galaxy s9","best cam",8.5f,800.f,22);
-            Product p3= new Product(15,"Nokia","Large battery ",6.5f,500.f,21);
-            ProductList.add(p1);
-            ProductList.add(p2);
-            ProductList.add(p3);
-
-            Iterator<Product> productIterator =  ProductList.iterator();
-
-
-            while (productIterator.hasNext()){
-                productIterator.next();
-            }
-*/
-
-
-
 
 }

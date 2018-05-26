@@ -117,14 +117,7 @@ public class Order implements Serializable {
 
 
     public static void writeOrders(ArrayList<Order> Orders){
-        /*
-         *
-         *   1.Loop through each Object inside users
-         *   2.writeObject
-         *
-         *
-         *
-         * */
+
         try {
             // create a new file with an ObjectOutputStream
             FileOutputStream out = new FileOutputStream("orders.txt");
@@ -179,18 +172,7 @@ public class Order implements Serializable {
             return 1000;
         }}
     public static ArrayList<Order> searchOrders(String keyword)  {
-        /*
-         *
-         *   1.Check if file exists else create
-         *   2.Read file into array ArrayList
-         *   3. Create temp array and call results
-         *   4. loop through the array you read from the file
-         *   5. apply the condition of contain or equal to the corresponding object
-         *   6. if you found somethign add to the results array
-         *   7. finally return results
-         *
-         *
-         * */
+
         File file = new File("orders.txt");
         try {
             file.createNewFile(); //will atomically checks the existence of the file else will create one

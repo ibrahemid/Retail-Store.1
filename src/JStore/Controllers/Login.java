@@ -86,11 +86,6 @@ public class Login extends Application implements ControlledScreen {
 
 
 
-
-
-
-
-
     @Override
     public void setScreenParent(ScreensController screenPage) {
         mainController = screenPage;
