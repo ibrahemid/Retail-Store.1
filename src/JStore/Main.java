@@ -2,13 +2,8 @@ package JStore;
 
 import JStore.Controllers.ADashboard;
 import JStore.Controllers.OrderManagement;
-import JStore.Controllers.Other.AddCustomer;
-import JStore.Controllers.Other.AddProduct;
 import JStore.Controllers.CustomerManagement;
 import JStore.Controllers.Login;
-import JStore.Controllers.Other.ManageCustomer;
-import JStore.Controllers.Other.ManageOrder;
-import JStore.Controllers.Other.ManageProduct;
 import JStore.Controllers.ProductManagement;
 import JStore.Controllers.ScreensController;
 import JStore.Controllers.UDashboard;
